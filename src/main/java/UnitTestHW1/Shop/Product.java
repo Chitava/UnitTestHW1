@@ -20,7 +20,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("Продукт: %s\n Стоимость: %s", getTitle(), getCoast());
+        return String.format("Продукт: %s\n Стоимость: %s р.", getTitle(), getCoast());
     }
 
 }

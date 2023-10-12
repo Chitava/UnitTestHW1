@@ -5,7 +5,11 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class BasketOrders {
-    private ArrayList<Product> basket = new ArrayList<>();
+    private ArrayList<Product> basket;
+
+    public BasketOrders() {
+        this.basket = new ArrayList<>();
+    }
 
     public void addProductToBasket(Product product) {
         basket.add(product);
@@ -34,7 +38,9 @@ public class BasketOrders {
         return basket.get(index);
     }
 
-
+    public int getLenth(){
+        return basket.size();
+    }
 
 
     public ArrayList<Product> sortProductsByPrice() {
@@ -42,5 +48,10 @@ public class BasketOrders {
         Collections.sort(basket, compare);
         return basket;
     }
+
+    public float getProductCoastInBasket(int i){
+        return basket.get(i).getCoast();
+    }
+
 
 }

@@ -1,6 +1,7 @@
 package UnitTestHW1;
 import UnitTestHW1.Shop.BasketOrders;
 import UnitTestHW1.Shop.Product;
+import UnitTestHW1.Shop.ProductTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class Main {
         basket.printBasketContent();
         System.out.println(basket.getMostExpensiveProduct());
         System.out.println(basket.sortProductsByPrice());
+        ProductTest.testSorting(basket);
 
     }
 }
